@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+/*linear-gradient - ek direction mai gradiation create karte hai 
+ radial-gradient- ek radius mai gradient create karte hai 
+ */
+
+ :root{
+    --x:50vw;
+    --y:50vh;
+ }
+ body{
+    background-image:
+
+    radial-gradient(150px at var(--x) var(--y), transparent,rgb(0,0,0,1)),
+     url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ 

@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+:root{
+    --x:50vw;
+   --y:50vh;
+}
+
+.video-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.flashlight{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: radial-gradient(200px at var(--x) var(--y),transparent,rgba(0,0,0,0.95));
+}
