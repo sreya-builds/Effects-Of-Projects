@@ -14,6 +14,7 @@ html, body {
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
+    padding: 20px;
 }
 
 .btn {
