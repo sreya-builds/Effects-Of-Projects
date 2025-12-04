@@ -1,12 +1,12 @@
-const words = document.querySelectorAll(".word");
-const ball = document.querySelector(".ball");
-const container = document.querySelector(".stack")
+let words = document.querySelectorAll(".word");
+let ball = document.querySelector(".ball");
+let container = document.querySelector(".stack")
 
-const tl = gsap.timeline({ repeat: -1 });
+let tl = gsap.timeline({ repeat: -1 });
 
 words.forEach((word, index) => {
 
-  const letters = word.textContent.split("");
+  let letters = word.textContent.split("");
   word.innerHTML = letters.map(l => `<span class="char">${l}</span>`).join("");
 
   const chars = word.querySelectorAll(".char");
