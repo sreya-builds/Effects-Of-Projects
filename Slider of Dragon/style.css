@@ -62,23 +62,24 @@ html, body {
 }
 .list-img{
     height: 100vh;
-    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    width: 100%;
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-     width:auto;
+    top: 0;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.carousel .list-img.item{
- height: 100vh;
- position: relative;
+.list-img .item{
+ height: 100%;
+ width: 100%;
  display: flex;
+ justify-content: flex-end;
  align-items: center;
-  justify-content:center;
-}
-}
+ padding-right: 50px;
+ }
+ .list-img .item img{
+    max-height: 80vh;
+    object-fit: contain;
+ }
 .navigation{
     position: absolute;
     bottom: 7%;
