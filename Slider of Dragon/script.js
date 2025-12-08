@@ -11,7 +11,7 @@ nextBtn.addEventListener('click',function(){
     index = (index < 3) ? index + 1 : 3;
 
     listInfo.style.transform = `translateY(${index * -25}%)`;
-    listImg.style.transform = `translateY(${index * -100}vh)`;
+    listImg.style.transform = `translateY(${index * -100}%)`;
 
    bgs[index].classList.add('active');
 })
@@ -20,6 +20,6 @@ prevBtn.addEventListener('click',function(){
     index = (index > 0) ? index - 1 : 0;
 
     listInfo.style.transform = `translateY(${index * -25}%)`;
-    listImg.style.transform = `translateY(${index * -100}vh)`;
+    listImg.style.transform = `translateY(${index * -100}%)`;
     bgs[indexPrev].classList.remove('active');
 })
