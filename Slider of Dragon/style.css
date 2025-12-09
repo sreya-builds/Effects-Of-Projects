@@ -60,23 +60,26 @@ html, body {
     font-family: monospace;
     font-size: 25px;
 }
-.carousel .list-img{
-    height: 100%;
-    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.carousel .list-img.item{
- height: 100%;
- position: relative;
- display: flex;
- align-items: center;
-}
 .list-img{
+    height: 100vh;
+    width: 100%;
     position: absolute;
     right: 0;
-    pointer-events: none;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,.1));
-
+    top: 0;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+.list-img .item{
+ height: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ padding-right: 50px;
+ }
+ .list-img .item img{
+    max-height: 80vh;
+    object-fit: contain;
+ }
 .navigation{
     position: absolute;
     bottom: 7%;
