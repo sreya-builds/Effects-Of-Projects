@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+    anchor-name: --default-anchor;
+}
+.button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    gap: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.button:hover{
+    anchor-name: --default-anchor;
+}
+.red{
+    background-color: rgba(255, 0, 0, 0.785);
+    
+}
+.blue{
+    background-color: rgba(0, 0, 255, 0.785);
+}
+.green{
+    background-color: rgba(0, 128, 0, 0.785);
+}
+.purple{
+    background-color: rgba(183, 67, 18, 0.954);
+}
+.anchor{
+    background-color: white;
+    position: absolute;
+    top: anchor(top);
+    left: anchor(left);
+    right: anchor(right);
+    bottom: anchor(bottom);
+    position-anchor: --default-anchor;
+    border-radius: 8px;
+    transition: all 2s ease;
+    mix-blend-mode: exclusion;
+    pointer-events: none;
+
+}
